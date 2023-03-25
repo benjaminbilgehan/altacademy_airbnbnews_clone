@@ -7,12 +7,40 @@
 }
 
 
+body {
+    font-family: var(--ff-navbar);
+}
+
+.fs-news-item {
+    font-size: var(--fs-100);
+
+}
+
+h3.fs-news-item a:hover {
+    text-decoration: underline;
+
+}
+
+.fs-news-item-time {
+    font-size: var(--fs-050);
+}
+
 :root {
     /* #FONT SIZES# */
     --fs-nav-menu-item: 17px;
     --fs-navbar-brand: 25px;
     /* #FONT FAMILY# */
     --ff-navbar: 'Nunito Sans', sans serif;
+
+    /* #FONT SIZE# */
+    --fs-050: 14px;
+    --fs-090: 18px;
+    --fs-100: 20px;
+    --fs-200: 22px;
+    --fs-300: 24px;
+    --fs-400: 26px;
+    --fs-500: 28px;
+
 
     /* #FONT WEIGHTS# */
     --fw-100: 100;
@@ -92,10 +120,21 @@ nav a {
 
 .dropdown-menu {
     border: none;
-    box-shadow: 0px 5px 10px 10px var(--clr-hover-btn);
+    box-shadow: 0px 5px 5px 3px hsla(0, 0%, 36%, 0.4);
     border-radius: 15px;
 }
 
 .custom-size-dropdown-item {
     width: 90%;
+}
+
+.hero-image-section {
+    width: 1061px;
+    height: 708px;
+}
+
+.line-news-item-section {}
+
+.fa-icon-dark {
+    color: #222222;
 }
