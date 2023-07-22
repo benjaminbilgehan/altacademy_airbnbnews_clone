@@ -97,12 +97,7 @@ nav a {
 
 /* increased the container size to 1760 which airbnb size supports instead of 1440 in bs4*/
 @media (min-width: 1200px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
+    .container {
         max-width: 1760px;
     }
 }
@@ -128,10 +123,10 @@ nav a {
     width: 90%;
 }
 
-.hero-image-section {
+/* .hero-image-section {
     width: 1061px;
     height: 708px;
-}
+} */
 
 .line-news-item-section {}
 
@@ -174,4 +169,119 @@ nav a {
 .category-item-title-first-row>.fs-news-item-time {
     font-size: var(--fs-050);
 }
+
+
+
+.carousel-size {
+width: 850px;
+}
+
+.full-bg-color {
+background-color: #000;}
+
+
+  /* Custom CSS for rounded corners based on breakpoints */
+  @media (max-width: 992px) {
+    .rounded-md-top {
+      border-top-right-radius: 0.25rem;
+      border-top-left-radius: 10.25rem;
+      border-bottom-right-radius: 0rem !important;
+      border-bottom-left-radius: 0rem !important;
+    }
+
+    .rounded-md-bottom {
+      border-top-right-radius: 0rem !important;
+      border-top-left-radius: 0rem !important;
+      border-bottom-right-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+      }
+
+  }
+
+
+  /* categroy buttons style  */
+
+  .cat-btn.active {
+
+outline: 1.5px solid rgb(38, 38, 38); /* Remove the default outline */
+
+}
+
+  .cat-btn {
+
+    /* width: 150px; */
+    padding:3px 15px 3px 15px;
+    border: 0;
+    border-radius: 25px;
+    box-sizing: border-box; /* Use border-box to include padding in the element's width */
+    outline: 0.5px solid rgb(175, 175, 175); /* Remove the default outline */
+    font-size: 16px;
+    font-weight: 600;
+    
+
+}
+
+
+.cat-btn:hover {
+    
+    outline: 1px solid rgb(113, 113, 113); /* Add an outline on hover */
+
+}
+
+ /* ending category button style  */
+
+
+/* FOOTER*/
+
+.airbnb-footer{
+    
+    /* background-color:#F8F9FA ; */
+}
+
+.category-list-items li {
+    list-style: none;
+}
+
+.category-list-items li a {
+    color: #343a40;
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 35px;
+}
+
+.category-list-items li a:hover {
+    color: #000;
+}
+
+.category-header-footer{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.icon-list li {
+    list-style: none;
+}
+
+.icon-list{
+    gap:25px;
+}
+
+.copyright-list li{
+    list-style: none;
+}
+
+.copyright-list li a {
+    color: #343a40;
+    font-size: 12.8px;
+}
+
+.copyright-list {
+    gap: 25px;
+    color: #343a40;
+    font-size: 12.8px;
+}
+
+/*FOOTER END*/
+
+
 

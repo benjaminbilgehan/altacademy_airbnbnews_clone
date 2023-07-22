@@ -16,11 +16,14 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white mt-2">
       <img class="airbnb-logo" src="/images/airbnb_logo.svg" alt="" /><a class="navbar-brand ml-2" href="#">News</a>
       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
-        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
@@ -66,123 +69,147 @@
         </form>
       </div>
     </nav>
+    <div class="container-fluid cizgi mt-2"></div><!-- line under the navbar with conatiner-fluid -->
   </div>
 
-  <div class="container-fluid cizgi mt-2"></div>
 
-  <div class="container mt-5">
+
+  <!-- end of navbar -->
+
+  <div class="container mt-3">
     <div class="row">
-      <div class="hero-left-side col-4 d-flex flex-column align-items-start justify-content-center">
-        <time>March 23,2023</time>
-        <h3>
-          Hosts in the US earned $22 billion in supplemental income last year
-        </h3>
-        <button class="btn btn-danger btn-lg border-0 rounded">
-          Read More
-        </button>
+
+      <div class="col-12 order-2 col-md-12 order-md-2 col-xl-4 order-xl-1 m-auto">
+        <div class="">
+          <time>March 23,2023</time>
+          <h3>
+            Hosts in the US earned $22 billion in supplemental income last year
+          </h3>
+          <button class="btn btn-danger btn-lg border-0 rounded">
+            Read More
+          </button>
+        </div>
       </div>
-      <div class="hero-right-side col-8 d-flex justify-content-end">
-        <img class="hero-image-section" src="/images/hero-image-banner-opera.jpeg" alt="" />
+
+      <div class="col-12 order-1 col-md-12 order-md-1 col-xl-8">
+        <div class="">
+          <img class="img-fluid" src="/images/hero-image-banner-opera.jpeg" alt="" />
+        </div>
       </div>
+
     </div>
   </div>
 
+
   <div class="container mt-5">
     <div class="row">
-      <div class="col-8">
+      <div class="col-md-12 col-lg-8">
+        <!-- Lastest news titile -->
         <h2 class="font-weight-bold">Latest News</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <!-- 2 square boxes content -->
+            <div class="news-item d-flex mb-3 mt-3">
+              <div class="image-square mr-3">
+                <a href="#">
+                  <img class="rounded-lg" src="/images/latest-news-1.jpeg" alt="News Photo"
+                    style="width: 119px; height: 119px" />
+                </a>
+              </div>
+
+              <div class="title-square">
+                <h3 class="fs-news-item">
+                  <a class="text-dark font-weight-bold" href="#">College basketball finals could mean big earnings for
+                    local
+                    Houston Hosts</a>
+                </h3>
+                <time class="fs-news-item-time">March 21, 2023</time>
+              </div>
+            </div>
+
+            <div class="news-item d-flex ">
+              <div class="image-square mr-3 mb-4">
+                <a href="#">
+                  <img class="rounded-lg" src="/images/latest-news-2.jpeg" alt="News Photo"
+                    style="width: 119px; height: 119px" />
+                </a>
+              </div>
+              <div class="title-square">
+                <h3 class="fs-news-item">
+                  <a class="text-dark font-weight-bold" href="#">The 10 most wishlisted converted pubs to celebrate St.
+                    Patrick's Day</a>
+                </h3>
+                <time class="fs-news-item-time">March 14, 2023</time>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <!-- 2 square boxes content -->
+            <div class="news-item d-flex mb-4 mt-3">
+              <div class="image-square mr-3">
+                <a href="#">
+                  <img class="rounded-lg" src="/images/latest-news-3.jpeg" alt="News Photo"
+                    style="width: 119px; height: 119px" />
+                </a>
+              </div>
+              <div class="title-square">
+                <h3 class="fs-news-item">
+                  <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
+                    benefits of hosting</a>
+                </h3>
+                <time class="fs-news-item-time">March 16, 2023</time>
+              </div>
+            </div>
+
+            <div class="news-item d-flex">
+              <div class="image-square mr-3 mb-4">
+                <a href="#">
+                  <img class="rounded-lg" src="/images/latest-news-4.jpeg" alt="News Photo"
+                    style="width: 119px; height: 119px" />
+                </a>
+              </div>
+              <div class="title-square">
+                <h3 class="fs-news-item">
+                  <a class="text-dark font-weight-bold" href="#">Live in the movies without a movie star budget</a>
+                </h3>
+                <time class="fs-news-item-time">March 10, 2023</time>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="col-4 border-left">
-        <h2 class="ml-5 font-weight-bold">Follow us</h2>
+      <div class="col-xs-12 col-md-12 col-lg-4 m-auto">
+        <!-- follow us title -->
+        <h2 class="font-weight-bold">Follow us</h2>
+
+        <div class="row">
+          <div class="col-md-12  m-auto">
+            <!-- follow us icons -->
+            <div class="line-news-item-section">
+              <p>Get the latest news and travel inspiration.</p>
+              <a href="#"><i class="fab fa-2x fa-twitter fa-icon-dark mr-3"></i></a>
+              <a href="#"><i class="fab fa-2x fa-instagram fa-icon-dark mr-3"></i></a>
+              <a href="#"><i class="fab fa-2x fa-linkedin fa-icon-dark mr-3"></i></a>
+              <a href="#"><i class="fab fa-2x fa-facebook-f fa-icon-dark"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  <!-- end of container  -->
 
-  <div class="container">
-    <div class="row d-flex">
-      <div class="col-4">
-        <div class="news-item d-flex mb-4">
-          <div class="image-square mr-3">
-            <a href="#">
-              <img class="rounded-lg" src="/images/latest-news-1.jpeg" alt="News Photo"
-                style="width: 119px; height: 119px" />
-            </a>
-          </div>
-          <div class="title-square">
-            <h3 class="fs-news-item">
-              <a class="text-dark font-weight-bold" href="#">College basketball finals could mean big earnings for local
-                Houston Hosts</a>
-            </h3>
-            <time class="fs-news-item-time">March 21, 2023</time>
-          </div>
-        </div>
-        <div class="news-item d-flex">
-          <div class="image-square mr-3 mb-4">
-            <a href="#">
-              <img class="rounded-lg" src="/images/latest-news-2.jpeg" alt="News Photo"
-                style="width: 119px; height: 119px" />
-            </a>
-          </div>
-          <div class="title-square">
-            <h3 class="fs-news-item">
-              <a class="text-dark font-weight-bold" href="#">The 10 most wishlisted converted pubs to celebrate St.
-                Patrick's Day</a>
-            </h3>
-            <time class="fs-news-item-time">March 14, 2023</time>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-4">
-        <div class="news-item d-flex mb-4">
-          <div class="image-square mr-3">
-            <a href="#">
-              <img class="rounded-lg" src="/images/latest-news-3.jpeg" alt="News Photo"
-                style="width: 119px; height: 119px" />
-            </a>
-          </div>
-          <div class="title-square">
-            <h3 class="fs-news-item">
-              <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
-                benefits of hosting</a>
-            </h3>
-            <time class="fs-news-item-time">March 16, 2023</time>
-          </div>
-        </div>
-        <div class="news-item d-flex">
-          <div class="image-square mr-3 mb-4">
-            <a href="#">
-              <img class="rounded-lg" src="/images/latest-news-4.jpeg" alt="News Photo"
-                style="width: 119px; height: 119px" />
-            </a>
-          </div>
-          <div class="title-square">
-            <h3 class="fs-news-item">
-              <a class="text-dark font-weight-bold" href="#">Live in the movies without a movie star budget</a>
-            </h3>
-            <time class="fs-news-item-time">March 10, 2023</time>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-4 border-left">
-        <div class="line-news-item-section ml-5">
-          <p>Get the latest news and travel inspiration.</p>
-          <a href="#"><i class="fab fa-2x fa-twitter fa-icon-dark mr-3"></i></a>
-          <a href="#"><i class="fab fa-2x fa-instagram fa-icon-dark mr-3"></i></a>
-          <a href="#"><i class="fab fa-2x fa-linkedin fa-icon-dark mr-3"></i></a>
-          <a href="#"><i class="fab fa-2x fa-facebook-f fa-icon-dark"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- #Carousel Title# -->
 
   <div class="container mt-5 mb-5">
     <div class="row">
-      <div class="col-6">
-        <h2 class="font-weight-bold">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+        <h2 class="font-weight-bold text-left">
           The economic opportunities of hosting
         </h2>
         <p class="fs-news-item">
@@ -195,12 +222,13 @@
   </div>
 
   <!-- #News Carousel# -->
+
   <div class="container-fluid position-relative p-0">
     <div class="carousel-bg-black">
       <div class="container">
         <div class="row">
-          <div class="col-3"></div>
-          <div class="col-6">
+          <div class="col-md-12 col-12 col-sm-12 col-lg-12 col-xl-3"></div>
+          <div class="col-md-12 col-12 col-sm-12 col-lg-12 col-xl-6">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item carousel-active-item-border-none active">
@@ -235,7 +263,8 @@
               <time class="fs-news-item-time text-white">February 2, 2023</time>
             </div>
           </div>
-          <div class="col-3"></div>
+          <div class="col-md-12 col-12 col-sm-12 col-lg-12 col-xl-3"></div>
+
         </div>
       </div>
     </div>
@@ -245,11 +274,24 @@
 
   <div class="container mt-5 mb-5">
     <div class="row">
-      <div class="mb-5 mt-2">
+      <div class="col-12 mb-3">
         <h2 class="font-weight-bold">Categories</h2>
       </div>
-      <div class="row">
-        <div class="col-4">
+      <div class="col-12 mb-3">
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2 active">All</button>
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2">Company</button>
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2">Stays</button>
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2">Experiences</button>
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2">Policy</button>
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2">Community</button>
+        <button class="cat-btn btn-lg btn-light mb-2">Airbnb.org</button>
+
+
+
+      </div>
+
+      <div class="row pr-3 pl-3">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
           <a href="#"><img class="w-100 rounded img-fluid" src="https://picsum.photos/523/349?random=11"
               alt="photo 1" /></a>
           <div class="category-item-title-first-row mt-3">
@@ -260,7 +302,8 @@
             <time class="fs-news-item-time">March 21, 2023</time>
           </div>
         </div>
-        <div class="col-4">
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
           <a href="#"><img class="w-100 rounded img-fluid" src="https://picsum.photos/523/349?random=12"
               alt="photo 1" /></a>
           <div class="category-item-title-first-row mt-3">
@@ -271,7 +314,8 @@
             <time class="fs-news-item-time">March 21, 2023</time>
           </div>
         </div>
-        <div class="col-4">
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-3">
           <a href="#"><img class="w-100 rounded img-fluid" src="https://picsum.photos/523/349?random=13"
               alt="photo 1" /></a>
           <div class="category-item-title-first-row mt-3">
@@ -289,31 +333,22 @@
   <!-- Category 2nd line - 1st row  -->
   <div class="container  mt-5">
     <div class="row">
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=20" alt="" /></a>
-        <div class="title-square mt-2">
-          <h3 class="fs-news-item">
-            <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
-              benefits
-              of hosting</a>
-          </h3>
-          <time class="fs-news-item-time">March 16, 2023</time>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <div class="news-item-small">
+          <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=20" alt="" /></a>
+          <div class="title-square mt-2">
+            <h3 class="fs-news-item">
+              <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
+                benefits
+                of hosting</a>
+            </h3>
+            <time class="fs-news-item-time">March 16, 2023</time>
+          </div>
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=21" alt="" /></a>
-        <div class="title-square mt-2">
-          <h3 class="fs-news-item">
-            <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
-              benefits of hosting</a>
-          </h3>
-          <time class="fs-news-item-time">March 16, 2023</time>
-        </div>
-      </div>
-
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=22" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=21" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -323,8 +358,19 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=23" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=22" alt="" /></a>
+        <div class="title-square mt-2">
+          <h3 class="fs-news-item">
+            <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
+              benefits of hosting</a>
+          </h3>
+          <time class="fs-news-item-time">March 16, 2023</time>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=23" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -340,8 +386,8 @@
   <!-- Category 2nd line - 1st row  -->
   <div class="container  mt-5">
     <div class="row">
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=24" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=24" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -352,8 +398,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=25" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=25" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -363,8 +409,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=26" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=26" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -374,8 +420,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=27" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=27" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -392,8 +438,8 @@
   <!-- Category 2nd line - 1st row  -->
   <div class="container mt-5">
     <div class="row">
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=28" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=28" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -404,8 +450,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=29" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=29" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -415,8 +461,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=30" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=30" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -426,8 +472,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=31" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=31" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -445,8 +491,8 @@
   <!-- Category 2nd line - 1st row  -->
   <div class="container mt-5">
     <div class="row">
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=32" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=32" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -457,8 +503,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=21" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=21" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -468,8 +514,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=33" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=33" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -479,8 +525,8 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <a href="#"><img class="rounded" src="https://picsum.photos/388/259?random=34" alt="" /></a>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+        <a href="#"><img class="rounded img-fluid" src="https://picsum.photos/523/349?random=34" alt="" /></a>
         <div class="title-square mt-2">
           <h3 class="fs-news-item">
             <a class="text-dark font-weight-bold" href="#">New rural travel data in North Carolina shows economic
@@ -489,39 +535,135 @@
           <time class="fs-news-item-time">March 16, 2023</time>
         </div>
       </div>
-
+      <div class="col-12 mb-3">
+        <button class="cat-btn btn-lg btn-light mr-2 mb-2">More</button>
+      </div>
     </div>
+
+
   </div>
 
 
-  <!-- ! Use nav tabs  -->
+
+  <!-- subscribtion section -->
   <div class="container">
-
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
-          aria-controls="pills-home" aria-selected="true">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
-          aria-controls="pills-profile" aria-selected="false">Profile</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
-          aria-controls="pills-contact" aria-selected="false">Contact</a>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore omnis sed optio molestiae atque ipsa illum
-          labore temporibus eius aliquam impedit voluptate et voluptatem voluptatibus ratione dolores aliquid, adipisci
-          esse quia tenetur quos accusantium! Obcaecati placeat sed, tempora quia harum pariatur totam ea voluptates
-          voluptatem?</p>
+    <div class="row mr-1 ml-1">
+      <div class="col-xs-12 col-lg-6 p-0">
+        <img class="img-fluid rounded-md-top rounded-left" src="https://picsum.photos/1500/750?random=31" alt="">
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      <div class="col-xs-12 col-lg-6 p-0">
+        <div
+          class="full-bg-color text-white d-flex flex-column justify-content-center align-items-center h-100 rounded-md-bottom rounded-right p-3">
+          <h2>Sign up for our newsletter</h2>
+          <p>Enter your email to receive the latest news and updates from Airbnb News.</p>
+          <button class="btn-danger btn btn-lg border-0 rounded">Subscribe</button>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- footer starts here  -->
+  <div class="container airbnb-footer mt-5">
+    <div class="row mr-1 ml-1 bg-light rounded">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-3">
+        <ul class="category-list-items">
+          <h5 class="category-header-footer">About</h5>
+          <li><a href="#">How Airbnb works</a></li>
+          <li><a href="#">Newsroom</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Airbnb Plus</a></li>
+          <li><a href="#">HotelTonight</a></li>
+          <li><a href="#">Airbnb for Work</a></li>
+          <li><a href="#">Made possible by Hosts</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Founders Letter</a></li>
+        </ul>
+        <hr class="d-block d-lg-none">
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-3">
+        <ul class="category-list-items">
+          <h5 class="category-header-footer">Community</h5>
+          <li><a href="#">Diversity & Belonging</a></li>
+          <li><a href="#">Against Discrimination</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Airbnb Associates</a></li>
+          <li><a href="#">Frontline Stays</a></li>
+          <li><a href="#">Guest Referrals</a></li>
+          <li><a href="#">Gift cards</a></li>
+          <li><a href="#">Airbnb.org</a></li>
+        </ul>
+        <hr class="d-block d-lg-none">
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-3">
+        <ul class="category-list-items">
+          <h5 class="category-header-footer">Hosting</h5>
+          <li><a href="#">Host your home</a></li>
+          <li><a href="#">Host an Online Experience</a></li>
+          <li><a href="#">Host an Experience</a></li>
+          <li><a href="#">Responsible Hosting</a></li>
+          <li><a href="#">Refer Hosts</a></li>
+          <li><a href="#">Resource Center</a></li>
+          <li><a href="#">Community Center</a></li>
+        </ul>
+        <hr class="d-block d-lg-none">
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-3">
+        <ul class="category-list-items">
+          <h5 class="category-header-footer">Support</h5>
+          <li><a href="#">Our COVID-19 Response</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Cancellation options</a></li>
+          <li><a href="#">Neighborhood Support</a></li>
+          <li><a href="#">Trust & Safety</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mr-1 ml-1 bg-light rounded mt-1">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 ml-2 mt-4">
+        <h5 class="category-header-footer">Disclaimer</h5>
+        <p>The Airbnb Newsroom is aimed at journalists. All Homes and Experiences referenced on the Airbnb Newsroom are
+          intended purely to inspire and illustrate. Airbnb does not recommend or endorse specific Home or Experience
+          listings on the Airbnb platform.</p>
+      </div>
+    </div>
+    <div class="row mr-1 ml-1 bg-light rounded-bottom">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-8 mt-5">
+        <ul class="icon-list d-flex">
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+              </svg></a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+              </svg></a></li>
+          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+              </svg></a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-4  mt-5">
+        <ul class="copyright-list d-flex">
+          <p>© 2022 Airbnb, Inc. All rights reserved</p>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Site map</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
